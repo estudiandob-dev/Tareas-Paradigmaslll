@@ -1,0 +1,162 @@
+:root {
+  --papel: #fbfaf5;
+  --cuadricula: #cfdcec;
+  --tinta: #22303f;
+  --trazo-x: #c8372d;
+  --trazo-o: #1f5fa8;
+  --resalte: #f2c94c;
+  --radio: 10px;
+  --tam-celda: clamp(80px, 26vw, 118px);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  color: var(--tinta);
+  font-family: "Trebuchet MS", "Segoe UI", system-ui, sans-serif;
+  background-color: var(--papel);
+  background-image:
+    linear-gradient(var(--cuadricula) 1px, transparent 1px),
+    linear-gradient(90deg, var(--cuadricula) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.hoja {
+  width: min(100%, 460px);
+  background: var(--papel);
+  border: 2px solid var(--tinta);
+  border-radius: var(--radio);
+  padding: 1.25rem 1.25rem 1rem;
+  box-shadow: 6px 6px 0 var(--tinta);
+  text-align: center;
+}
+
+h1 {
+  margin: 0 0 .75rem;
+  font-size: 2rem;
+  letter-spacing: .04em;
+}
+
+/* Marcador */
+.marcador {
+  display: flex;
+  gap: .75rem;
+  justify-content: center;
+  margin-bottom: .75rem;
+}
+.jugador {
+  flex: 1;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-areas: "ficha puntos" "rest rest";
+  align-items: center;
+  gap: 0 .5rem;
+  padding: .4rem .6rem;
+  border: 2px solid transparent;
+  border-radius: var(--radio);
+  transition: border-color .15s, background-color .15s;
+}
+.jugador.activo { border-color: var(--tinta); background: #fff8d6; }
+.jugador .ficha { grid-area: ficha; font-size: 1.8rem; font-weight: 700; }
+.jugador .puntos { grid-area: puntos; font-size: 1.5rem; text-align: right; }
+.jugador .restantes { grid-area: rest; font-size: .8rem; text-align: left; min-height: 1.1em; }
+.jugador.x .ficha { color: var(--trazo-x); }
+.jugador.o .ficha { color: var(--trazo-o); }
+
+.estado {
+  min-height: 2.6em;
+  margin: 0 0 .75rem;
+  font-size: 1rem;
+}
+
+/* Tablero */
+.tablero {
+  display: grid;
+  grid-template-columns: repeat(3, var(--tam-celda));
+  grid-template-rows: repeat(3, var(--tam-celda));
+  gap: 6px;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.celda {
+  position: relative;
+  border: 2px solid var(--tinta);
+  border-radius: var(--radio);
+  background: #fff;
+  font-family: inherit;
+  font-size: calc(var(--tam-celda) * .6);
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+  color: var(--tinta);
+  transition: background-color .15s, transform .12s;
+}
+.celda.x { color: var(--trazo-x); }
+.celda.o { color: var(--trazo-o); }
+.celda:disabled { cursor: default; }
+.celda:not(:disabled):hover { background: #f3f7fc; }
+.celda:focus-visible { outline: 3px solid var(--trazo-o); outline-offset: 2px; }
+
+/* Ficha colocada: pequeño "sello" al aparecer */
+.celda.nueva { animation: sello .18s ease-out; }
+@keyframes sello {
+  from { transform: scale(.7); }
+  to   { transform: scale(1); }
+}
+
+.celda.seleccionada {
+  background: var(--resalte);
+  transform: translateY(-3px);
+}
+.celda.destino { background: #e6f4ea; border-style: dashed; }
+.celda.destino::after {
+  content: "";
+  position: absolute;
+  inset: 50% auto auto 50%;
+  width: 14px; height: 14px;
+  margin: -7px 0 0 -7px;
+  border-radius: 50%;
+  background: var(--tinta);
+  opacity: .35;
+}
+.celda.ganadora { background: var(--resalte); border-width: 3px; }
+
+/* Controles */
+.acciones {
+  display: flex;
+  gap: .5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.btn {
+  font: inherit;
+  padding: .55rem 1rem;
+  border: 2px solid var(--tinta);
+  border-radius: var(--radio);
+  background: var(--tinta);
+  color: #fff;
+  cursor: pointer;
+}
+.btn:hover { background: #33465b; }
+.btn-sec { background: transparent; color: var(--tinta); }
+.btn-sec:hover { background: #eef2f7; }
+.btn:focus-visible { outline: 3px solid var(--trazo-o); outline-offset: 2px; }
+
+.reglas {
+  margin-top: 1rem;
+  text-align: left;
+  font-size: .9rem;
+}
+.reglas summary { cursor: pointer; font-weight: 700; }
+.reglas ul { margin: .5rem 0 0; padding-left: 1.2rem; }
+.reglas li { margin-bottom: .25rem; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}

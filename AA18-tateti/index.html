@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ta Te Ti</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="hoja">
+    <h1>Ta Te Ti</h1>
+
+    <section class="marcador" aria-label="Marcador">
+      <div class="jugador x" id="score-X">
+        <span class="ficha">X</span>
+        <span class="puntos" id="puntos-X">0</span>
+        <span class="restantes" id="restantes-X"></span>
+      </div>
+      <div class="jugador o" id="score-O">
+        <span class="ficha">O</span>
+        <span class="puntos" id="puntos-O">0</span>
+        <span class="restantes" id="restantes-O"></span>
+      </div>
+    </section>
+
+    <p id="estado" class="estado" role="status" aria-live="polite"></p>
+
+    <div id="tablero" class="tablero" role="grid" aria-label="Tablero de Ta Te Ti"></div>
+
+    <div class="acciones">
+      <button id="btn-reiniciar" class="btn">Nueva partida</button>
+      <button id="btn-puntajes" class="btn btn-sec">Reiniciar marcador</button>
+    </div>
+
+    <details class="reglas">
+      <summary>Reglas del juego</summary>
+      <ul>
+        <li>Juegan 2 personas. Cada una tiene tres fichas iguales: X u O.</li>
+        <li>Se turnan para colocar una ficha en una casilla vacía.</li>
+        <li>Cuando las seis fichas están en el tablero, cada turno se mueve una ficha propia a una casilla vacía contigua.</li>
+        <li>Gana quien alinee tres fichas iguales en vertical, horizontal o diagonal.</li>
+      </ul>
+    </details>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
