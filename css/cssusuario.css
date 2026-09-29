@@ -1,0 +1,101 @@
+/* Estilos generales del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos del contenedor principal */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo del encabezado */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo de las etiquetas */
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Estilos de los campos de entrada y textarea */
+input[type="text"], input[type="email"], input[type="tel"], textarea, select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 10px; /* Agregar un pequeño margen superior */
+}
+
+/* Estilo cuando un campo de entrada está enfocado */
+input:focus, textarea:focus, select:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Estilo del botón */
+button {
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Efecto hover para el botón */
+button:hover {
+    background-color: #45a049;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15); /* Aumentar sombra al pasar el mouse */
+}
+
+/* Estilos específicos para el botón de volver al inicio */
+a button {
+    background-color: #007BFF; /* Azul para distinguirlo */
+    margin-top: 15px; /* Espacio por encima del botón */
+}
+
+/* Efecto hover para el botón de volver al inicio */
+a button:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el mouse */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15); /* Sombra al pasar el mouse */
+}
+
+/* Media Query para pantallas más pequeñas */
+@media (max-width: 600px) {
+    .container {
+        margin: 20px; /* Reducir el margen en pantallas pequeñas */
+        padding: 15px; /* Reducir el padding en pantallas pequeñas */
+    }
+
+    /* Ajustar tamaño de los botones */
+    button {
+        font-size: 14px; /* Hacer el texto del botón un poco más pequeño */
+    }
+
+    /* Ajustar tamaño del botón de volver al inicio */
+    a button {
+        font-size: 14px; /* Ajustar tamaño del texto en pantallas pequeñas */
+    }
+}

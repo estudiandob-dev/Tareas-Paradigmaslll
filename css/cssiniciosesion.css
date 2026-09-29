@@ -1,0 +1,86 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* Color de fondo */
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    height: 100vh; /* Altura completa de la ventana */
+    margin: 0; /* Eliminar márgenes por defecto */
+}
+
+/* Contenedor del login */
+.login-container {
+    background-color: #fff; /* Fondo blanco */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+    width: 300px; /* Ancho fijo */
+    text-align: center; /* Centrar texto */
+}
+
+/* Imagen de login */
+.login-container img {
+    display: block; /* Mostrar como bloque */
+    margin: 0 auto 20px; /* Centrar y espaciado inferior */
+    max-width: 100%; /* Máximo ancho del 100% */
+    height: auto; /* Altura automática para mantener proporción */
+}
+
+/* Encabezado */
+.login-container h2 {
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+/* Campos de entrada */
+.login-container input[type="email"],
+.login-container input[type="password"] {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    margin: 10px 0; /* Espaciado superior e inferior */
+    border: 1px solid #ccc; /* Borde gris */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+/* Estilo del botón de envío */
+.login-container input[type="submit"] {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    background-color: #4CAF50; /* Color de fondo verde */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    color: white; /* Color de texto blanco */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambiar cursor a puntero */
+}
+
+/* Efecto hover para el botón de envío */
+.login-container input[type="submit"]:hover {
+    background-color: #e53935; /* Color más oscuro al pasar el ratón */
+}
+
+/* Estilo para el botón de "Volver atrás" */
+.login-container button {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    background-color: #45a049; /* Color de fondo rojo */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    color: white; /* Color de texto blanco */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambiar cursor a puntero */
+    margin-top: 10px; /* Espaciado superior */
+}
+
+/* Efecto hover para el botón "Volver atrás" */
+.login-container button:hover {
+    background-color: #e53935; /* Color más oscuro al pasar el ratón */
+}
+
+/* Mensaje de error */
+.error-message {
+    color: red; /* Color rojo para el mensaje de error */
+    margin-top: 10px; /* Espaciado superior */
+    display: none; /* Oculto por defecto */
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos a Entregar</title>
+    <link rel="stylesheet" type="text/css" href="./css/cssentregaproductos.css">
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <a href="menuinicio.html">Inicio</a>
+        <a href="stockproductos.html">Stock de Productos</a>
+        <a href="productosrecibidos.html">Productos Recibidos</a>
+        <a href="entregarproductos.html">Productos a Entregar</a>
+    </nav>
+
+    <!-- Contenido principal de la vista -->
+    <main class="main-content">
+    <h2>Productos a Entregar</h2>
+
+    <form onsubmit="return saveProduct()">
+        <table id="productTable">
+            <thead>
+                <tr>
+                    <th>Imagen del Producto</th>
+                    <th>Descripción del Producto</th>
+                    <th>Cantidad</th>
+                    <th>Fecha de Entrega</th>
+                    <th>Cliente</th>
+                    <th>Precio de Venta Por Unidad</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="image-upload">
+                            <input type="file" accept="image/*" onchange="previewImage(event, 'preview')" id="fileInput">
+                            <img id="preview" class="preview" alt="" style="display:none;">
+                        </div>
+                    </td>
+                    <td><input type="text" id="productName" placeholder="Nombre del Producto" required></td>
+                    <td><input type="number" id="quantity" placeholder="Cantidad" min="0" required></td>
+                    <td><input type="date" id="deliveryDate" required></td>
+                    <td><input type="text" id="customer" placeholder="Cliente" required></td>
+                    <td>
+                        <div class="price-container">
+                            <span>$</span><input type="number" id="salePrice" placeholder="0.00" min="0" step="0.01" required>
+                        </div>
+                    </td>
+                    <td><input type="submit" value="Guardar"></td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="error" id="errorMessage" style="display:none;">Por favor, complete todos los campos antes de guardar.</p>
+    </form>
+    </main>
+
+    <script src="javascript/jsentregaproductos.js"></script>  <!-- Asegúrate de que esta ruta sea correcta -->
+</body>
+</html>
