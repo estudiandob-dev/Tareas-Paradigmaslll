@@ -1,8 +1,0 @@
-{
-  "umbralCritico": 5,
-  "productos": [
-    { "productName": "Harina Morixe 000", "quantity": 3, "supplier": "Proveedor de ejemplo" },
-    { "productName": "Harina Morixe 0000", "quantity": 12, "supplier": "Proveedor de ejemplo" },
-    { "productName": "Harina Morixe Integral", "quantity": 4, "supplier": "Proveedor de ejemplo" }
-  ]
-}
