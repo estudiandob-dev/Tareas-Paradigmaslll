@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comprar | Cátedra Paradigmas 3</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">Cátedra Paradigmas 3</a>
+      <nav class="main-nav">
+        <a href="index.html">Inicio</a>
+        <a href="listado_tabla.html">Vista Tabla</a>
+        <a href="listado_box.html">Vista Tarjetas</a>
+        <a href="comprar.html" class="active btn-comprar">Comprar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <article class="content-card">
+      <h1>Completar Formulario de Compra</h1>
+      <hr class="divider">
+      <p class="subtitle">
+        Por favor, complete los datos requeridos para procesar su orden. Este formulario interactúa de forma directa con el protocolo HTTP:
+      </p>
+
+      <form action="#" method="post">
+        <!-- Nombre completo -->
+        <div class="form-group">
+          <label for="nombre">Nombre Completo del Cliente:</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+        </div>
+
+        <!-- Dirección -->
+        <div class="form-group">
+          <label for="direccion">Dirección de Entrega:</label>
+          <input type="text" id="direccion" name="direccion" placeholder="Calle 123 - Ciudad" required>
+        </div>
+
+        <!-- Teléfono + Email en fila -->
+        <div class="form-row">
+          <div class="form-group">
+            <label for="telefono">Teléfono de Contacto:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Ej. +54 351 123456" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="juan.perez@example.com" required>
+          </div>
+        </div>
+
+        <!-- Medio de pago -->
+        <div class="form-group">
+          <label for="pago">Seleccione un Medio de Pago:</label>
+          <select id="pago" name="pago" required>
+            <option value="" disabled selected>-- Seleccionar --</option>
+            <option value="tarjeta">Tarjeta de Crédito / Débito</option>
+            <option value="transferencia">Transferencia Bancaria</option>
+            <option value="efectivo">Efectivo / Contra entrega</option>
+            <option value="mercadopago">Mercado Pago</option>
+          </select>
+        </div>
+
+        <!-- Productos a adquirir -->
+        <div class="form-group">
+          <div class="productos-check">
+            <h3>Seleccione los Productos a Adquirir:</h3>
+            <div class="check-item">
+              <input type="checkbox" id="prod1" name="productos" value="rx7800xt">
+              <label for="prod1">Placa de Video Radeon RX 7800 XT - $550.00</label>
+            </div>
+            <div class="check-item">
+              <input type="checkbox" id="prod2" name="productos" value="ryzen7800x3d">
+              <label for="prod2">Procesador AMD Ryzen 7 7800X3D - $420.00</label>
+            </div>
+            <div class="check-item">
+              <input type="checkbox" id="prod3" name="productos" value="ramddr5">
+              <label for="prod3">Memoria RAM DDR5 32GB - $140.00</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Confirmar Pedido</button>
+        </div>
+      </form>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 - Universidad Tecnológica Nacional. Cátedra de Paradigmas y Lenguajes de Programación 3.</p>
+  </footer>
+</body>
+</html>

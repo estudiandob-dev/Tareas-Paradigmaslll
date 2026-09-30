@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vista Tarjetas | Cátedra Paradigmas 3</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">Cátedra Paradigmas 3</a>
+      <nav class="main-nav">
+        <a href="index.html">Inicio</a>
+        <a href="listado_tabla.html">Vista Tabla</a>
+        <a href="listado_box.html" class="active">Vista Tarjetas</a>
+        <a href="comprar.html" class="btn-comprar">Comprar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <article class="content-card wide">
+      <h1>Catálogo General (Vista de Tarjetas)</h1>
+      <hr class="divider">
+      <p class="subtitle">
+        Esta sección demuestra cómo reordenar y organizar las mismas entidades en forma de cajas o tarjetas utilizando un sistema bidimensional de CSS Grid:
+      </p>
+
+      <div class="cards-grid">
+        <!-- Producto 1 -->
+        <article class="product-card">
+          <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1591488320449-011701bb6704?w=500&q=80" alt="Placa de Video Radeon RX 7800 XT">
+          </div>
+          <div class="card-body">
+            <h3>Placa de Video RX 7800 XT</h3>
+            <p class="precio">$550.00</p>
+            <p class="desc">Excelente rendimiento gráfico para gaming a resolución 1440p con trazado de rayos.</p>
+            <a href="detalle.html" class="btn btn-primary btn-block">Ver Ficha Técnica</a>
+          </div>
+        </article>
+
+        <!-- Producto 2 -->
+        <article class="product-card">
+          <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1555617981-dac3880eac6e?w=500&q=80" alt="Procesador AMD Ryzen 7 7800X3D">
+          </div>
+          <div class="card-body">
+            <h3>AMD Ryzen 7 7800X3D</h3>
+            <p class="precio">$420.00</p>
+            <p class="desc">El mejor procesador de escritorio para videojuegos de la actualidad, gracias al 3D V-Cache.</p>
+            <a href="detalle.html" class="btn btn-primary btn-block">Ver Ficha Técnica</a>
+          </div>
+        </article>
+
+        <!-- Producto 3 -->
+        <article class="product-card">
+          <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1562976540-1502c2145186?w=500&q=80" alt="Memoria RAM DDR5 32GB">
+          </div>
+          <div class="card-body">
+            <h3>Memoria RAM DDR5 32GB</h3>
+            <p class="precio">$140.00</p>
+            <p class="desc">Kit de memorias de alto rendimiento diseñado para la máxima velocidad y estabilidad en el sistema.</p>
+            <a href="detalle.html" class="btn btn-primary btn-block">Ver Ficha Técnica</a>
+          </div>
+        </article>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 - Universidad Tecnológica Nacional. Cátedra de Paradigmas y Lenguajes de Programación 3.</p>
+  </footer>
+</body>
+</html>
