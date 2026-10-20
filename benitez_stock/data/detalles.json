@@ -1,0 +1,62 @@
+{
+    "1": {
+        "sku": "HAR-0000-001",
+        "ubicacion": "Depósito A - Estante 1",
+        "lote": "L2609-A",
+        "vencimiento": "2027-03-15",
+        "peso": "1 kg",
+        "medidas": "10 x 6 x 19 cm",
+        "almacenamiento": "Lugar seco y fresco",
+        "contacto": "Ventas - Molinos Morixe"
+    },
+    "2": {
+        "sku": "HAR-000-002",
+        "ubicacion": "Depósito A - Estante 1",
+        "lote": "L2609-B",
+        "vencimiento": "2027-03-20",
+        "peso": "1 kg",
+        "medidas": "10 x 6 x 19 cm",
+        "almacenamiento": "Lugar seco y fresco",
+        "contacto": "Ventas - Molinos Morixe"
+    },
+    "3": {
+        "sku": "ARR-LF-003",
+        "ubicacion": "Depósito A - Estante 2",
+        "lote": "L2608-C",
+        "vencimiento": "2027-08-01",
+        "peso": "1 kg",
+        "medidas": "12 x 5 x 20 cm",
+        "almacenamiento": "Lugar seco, lejos de la humedad",
+        "contacto": "Comercial - Molinos Río"
+    },
+    "4": {
+        "sku": "ALM-AJO-004",
+        "ubicacion": "Depósito B - Estante 4",
+        "lote": "L2608-D",
+        "vencimiento": "2027-01-10",
+        "peso": "500 g",
+        "medidas": "15 x 10 x 8 cm",
+        "almacenamiento": "Ambiente seco",
+        "contacto": "Pedidos - Distribuidora Centro"
+    },
+    "5": {
+        "sku": "ACE-GIR-005",
+        "ubicacion": "Depósito B - Estante 1",
+        "lote": "L2609-E",
+        "vencimiento": "2027-06-30",
+        "peso": "900 ml",
+        "medidas": "8 x 8 x 24 cm",
+        "almacenamiento": "Alejado de la luz y el calor",
+        "contacto": "Pedidos - Distribuidora Centro"
+    },
+    "6": {
+        "sku": "AZU-1K-006",
+        "ubicacion": "Depósito A - Estante 3",
+        "lote": "L2608-F",
+        "vencimiento": "2028-02-28",
+        "peso": "1 kg",
+        "medidas": "10 x 6 x 19 cm",
+        "almacenamiento": "Lugar seco y fresco",
+        "contacto": "Ventas - Dulces del Litoral"
+    }
+}

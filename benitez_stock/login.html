@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benítez Despensas | Ingresar</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="site-header"></header>
+
+    <main class="container">
+        <section class="page-heading">
+            <h1>Acceso de usuarios</h1>
+            <p>Ingresá o creá tu cuenta para comprar y reponer stock.</p>
+        </section>
+
+        <section class="panel auth-panel">
+            <div class="auth-tabs" role="tablist">
+                <button type="button" id="tab-login" class="auth-tab active" role="tab" aria-selected="true">Iniciar sesión</button>
+                <button type="button" id="tab-registro" class="auth-tab" role="tab" aria-selected="false">Crear cuenta</button>
+            </div>
+
+            <form id="login-form" class="auth-form">
+                <div class="field">
+                    <label for="login-email">Correo electrónico</label>
+                    <input id="login-email" type="email" autocomplete="email" required>
+                </div>
+                <div class="field">
+                    <label for="login-password">Contraseña</label>
+                    <input id="login-password" type="password" autocomplete="current-password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Ingresar</button>
+                <div id="login-result" class="result-message" aria-live="polite" hidden></div>
+            </form>
+
+            <form id="register-form" class="auth-form" hidden>
+                <div class="field">
+                    <label for="reg-nombre">Nombre completo</label>
+                    <input id="reg-nombre" type="text" maxlength="100" autocomplete="name" required>
+                </div>
+                <div class="field">
+                    <label for="reg-email">Correo electrónico</label>
+                    <input id="reg-email" type="email" maxlength="150" autocomplete="email" required>
+                </div>
+                <div class="field">
+                    <label for="reg-password">Contraseña (mínimo 8 caracteres)</label>
+                    <input id="reg-password" type="password" minlength="8" maxlength="72" autocomplete="new-password" required>
+                </div>
+                <div class="field">
+                    <label for="reg-password2">Repetir contraseña</label>
+                    <input id="reg-password2" type="password" minlength="8" maxlength="72" autocomplete="new-password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Crear cuenta</button>
+                <div id="register-result" class="result-message" aria-live="polite" hidden></div>
+            </form>
+        </section>
+    </main>
+
+    <footer id="site-footer"></footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

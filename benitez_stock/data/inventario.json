@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1,
+        "nombre": "Harina Morixe 0000",
+        "categoria": "Harinas",
+        "cantidad": 62,
+        "precio": 1,
+        "proveedor": "Molinos Morixe",
+        "fecha": "2026-09-10",
+        "imagen": "imgstock/harina-morixe-0000.jpg",
+        "descripcion": "Harina de trigo tipo 0000."
+    },
+    {
+        "id": 2,
+        "nombre": "Harina Morixe 000",
+        "categoria": "Harinas",
+        "cantidad": 20,
+        "precio": 1100,
+        "proveedor": "Molinos Morixe",
+        "fecha": "2026-09-12",
+        "imagen": "imgstock/harina-morixe-000.jpg",
+        "descripcion": "Harina de trigo tipo 000."
+    },
+    {
+        "id": 3,
+        "nombre": "Arroz Largo Fino 1kg",
+        "categoria": "Arroz",
+        "cantidad": 3,
+        "precio": 980,
+        "proveedor": "Molinos Río",
+        "fecha": "2026-09-11",
+        "imagen": "imgstock/arroz-largo-fino.jpg",
+        "descripcion": "Arroz largo fino en presentación de 1 kg."
+    },
+    {
+        "id": 4,
+        "nombre": "Figura de Ajo Lote",
+        "categoria": "Almacén",
+        "cantidad": 5,
+        "precio": 750,
+        "proveedor": "Distribuidora Centro",
+        "fecha": "2026-09-08",
+        "imagen": "imgstock/figura-ajo.jpg",
+        "descripcion": "Producto de almacén."
+    },
+    {
+        "id": 5,
+        "nombre": "Aceite de Girasol 900ml",
+        "categoria": "Aceites",
+        "cantidad": 28,
+        "precio": 2300,
+        "proveedor": "Distribuidora Centro",
+        "fecha": "2026-09-09",
+        "imagen": "imgstock/aceite.jpg",
+        "descripcion": "Aceite de girasol."
+    },
+    {
+        "id": 6,
+        "nombre": "Azúcar 1kg",
+        "categoria": "Almacén",
+        "cantidad": 18,
+        "precio": 1150,
+        "proveedor": "Dulces del Litoral",
+        "fecha": "2026-09-07",
+        "imagen": "imgstock/azucar.jpg",
+        "descripcion": "Azúcar blanca refinada."
+    }
+]

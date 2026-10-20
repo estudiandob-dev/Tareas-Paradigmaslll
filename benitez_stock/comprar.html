@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benítez Despensas | Compra</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="site-header"></header>
+
+    <main class="container">
+        <section class="page-heading">
+            <h1>Completar compra</h1>
+            <p>Ingresá los datos del cliente y confirmá los productos.</p>
+        </section>
+
+        <section id="purchase-login-notice" class="panel empty-state" hidden>
+            <h2>Necesitás iniciar sesión para comprar</h2>
+            <p>Ingresá con tu cuenta o creá una nueva para confirmar tu compra.</p>
+            <a class="btn btn-primary" href="login.html">Ingresar o crear cuenta</a>
+        </section>
+
+        <form id="purchase-form" class="panel form-panel" hidden>
+            <div class="form-grid">
+                <div class="field">
+                    <label for="customer-name">Nombre del cliente</label>
+                    <input id="customer-name" name="nombre" required>
+                </div>
+                <div class="field">
+                    <label for="customer-email">E-mail</label>
+                    <input id="customer-email" name="email" type="email" required>
+                </div>
+                <div class="field">
+                    <label for="customer-address">Dirección</label>
+                    <input id="customer-address" name="direccion" required>
+                </div>
+                <div class="field">
+                    <label for="customer-phone">Teléfono</label>
+                    <input id="customer-phone" name="telefono" required>
+                </div>
+                <div class="field">
+                    <label for="payment-method">Medio de pago</label>
+                    <select id="payment-method" name="medioPago" required>
+                        <option value="">Seleccionar...</option>
+                        <option>Transferencia</option>
+                        <option>Tarjeta</option>
+                        <option>Efectivo</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="panel-subsection">
+                <h2>Productos</h2>
+                <div id="purchase-products"></div>
+            </div>
+
+            <div id="purchase-summary" class="purchase-summary"></div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Confirmar compra</button>
+                <a href="index.html" class="btn btn-secondary">Volver al monitor</a>
+            </div>
+
+            <div id="purchase-result" class="result-message" aria-live="polite"></div>
+        </form>
+    </main>
+
+    <footer id="site-footer"></footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
